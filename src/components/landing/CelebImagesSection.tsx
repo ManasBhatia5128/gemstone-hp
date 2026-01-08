@@ -12,7 +12,7 @@ export function CelebImagesSection() {
     <section className="py-4 md:py-8 overflow-hidden bg-white">
       <div className="container mx-auto px-4 mb-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center text-[#232323]">
-          Celebrity Blessings
+          Trusted by the Trendsetters
         </h2>
       </div>
 
