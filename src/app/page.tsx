@@ -23,11 +23,11 @@ export default function Home() {
       <main>
         <HeroSection />
         <TrustBar />
+        <CelebImagesSection />
         <PainSolutionSection />
         <HowItWorksSection />
         <BenefitsSection />
         <TestimonialsSection />
-        <CelebImagesSection />
         <BonusesSection />
         <UrgencySection />
         <BookingForm />
