@@ -1,0 +1,13 @@
+export { Header } from './Header';
+export { HeroSection } from './HeroSection';
+export { TrustBar } from './TrustBar';
+export { PainSolutionSection } from './PainSolutionSection';
+export { HowItWorksSection } from './HowItWorksSection';
+export { BenefitsSection } from './BenefitsSection';
+export { TestimonialsSection } from './TestimonialsSection';
+export { BonusesSection } from './BonusesSection';
+export { UrgencySection } from './UrgencySection';
+export { FAQSection } from './FAQSection';
+export { BookingForm } from './BookingForm';
+export { CTAStrip } from './CTAStrip';
+export { Footer } from './Footer';
