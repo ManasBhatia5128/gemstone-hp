@@ -2,11 +2,21 @@
 
 import React from 'react';
 
-const IMAGE_COUNT = 8;
-const IMAGE_PATH = '/celeb_images/';
+const CELEB_IDS = [
+  "0_j3czmj",
+  "1_nmlu7k",
+  "2_hxritp",
+  "3_e8ialy",
+  "4_kol5kz",
+  "5_ye2wvw",
+  "6_alhlmy",
+  "7_lycmuc"
+];
+
+const BASE_URL = "https://res.cloudinary.com/dsnjojobi/image/upload/f_auto,q_auto/";
 
 export function CelebImagesSection() {
-  const imageIndices = Array.from({ length: IMAGE_COUNT }, (_, i) => i);
+  const scrollingImages = [...CELEB_IDS, ...CELEB_IDS];
 
   return (
     <section className="py-4 md:py-8 overflow-hidden bg-white">
@@ -17,25 +27,29 @@ export function CelebImagesSection() {
       </div>
 
       <div className="relative flex overflow-hidden">
-        {/* 'animate-scroll' now maps to the variable we added in globals.css */}
         <div className="flex animate-scroll hover:paused items-center">
-          {[...imageIndices, ...imageIndices].map((idx, i) => (
-            <div
-              key={i}
-              className="shrink-0 mx-2 md:mx-4"
-            >
-              <img
-                src={`${IMAGE_PATH}/${idx}.png`}
-                alt={`Celebrity ${idx + 1}`}
-                /* Removed card wrapper, height-driven sizing */
-                className="h-48 md:h-80 w-auto object-contain transition-transform duration-300 hover:scale-105 border-3 border-black rounded-4xl"
-                loading="lazy"
-              />
+          {scrollingImages.map((id, index) => (
+            // 1. The Outer Container used for margins
+            <div key={index} className="shrink-0 mx-2 md:mx-4">
+
+                 {/* 2. THE NEW FRAME WRAPPER */}
+                 {/* This div holds the size, borders, radius, and MASKS overflow */}
+                 <div className="h-48 md:h-80 overflow-hidden border-3 border-black rounded-4xl relative">
+                   <img
+                     src={`${BASE_URL}${id}`}
+                     alt={`Celebrity ${index % CELEB_IDS.length + 1}`}
+                     /* 3. THE IMAGE */
+                     /* It fills the wrapper height (h-full) and scales on hover. */
+                     /* Borders and rounding are removed from here. */
+                     className="h-full w-auto object-contain transition-transform duration-300 hover:scale-105"
+                     loading="lazy"
+                   />
+                 </div>
+
             </div>
           ))}
         </div>
 
-        {/* Edge Gradient Fades for polish */}
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-linear-to-r from-white via-white/20 to-transparent z-10"></div>
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-linear-to-l from-white via-white/20 to-transparent z-10"></div>
       </div>

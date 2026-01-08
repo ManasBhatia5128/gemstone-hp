@@ -311,7 +311,7 @@ html {
   --animate-scroll: scroll 20s linear infinite;
   @keyframes scroll {
     from { transform: translateX(0); }
-    to { transform: translateX(-600%); }
+    to { transform: translateX(-470%); }
   }
 
   --radius-sm: calc(var(--radius) - 4px);
