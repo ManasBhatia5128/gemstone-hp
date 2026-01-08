@@ -18,11 +18,11 @@ export function CelebImagesSection() {
 
       <div className="relative flex overflow-hidden">
         {/* 'animate-scroll' now maps to the variable we added in globals.css */}
-        <div className="flex animate-scroll hover:[animation-play-state:paused] items-center">
+        <div className="flex animate-scroll hover:paused items-center">
           {[...imageIndices, ...imageIndices].map((idx, i) => (
             <div
               key={i}
-              className="flex-shrink-0 mx-2 md:mx-4"
+              className="shrink-0 mx-2 md:mx-4"
             >
               <img
                 src={`${IMAGE_PATH}/${idx}.png`}
@@ -36,8 +36,8 @@ export function CelebImagesSection() {
         </div>
 
         {/* Edge Gradient Fades for polish */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white via-white/20 to-transparent z-10"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white via-white/20 to-transparent z-10"></div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-linear-to-r from-white via-white/20 to-transparent z-10"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-linear-to-l from-white via-white/20 to-transparent z-10"></div>
       </div>
     </section>
   );
