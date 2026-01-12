@@ -23,7 +23,7 @@ const icons = [FileText, Video, Package];
 
 export function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="py-20 bg-white">
+    <section id="how-it-works" className="py-8 bg-white">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <span className="inline-block bg-[#E4EDF8] text-[#768597] rounded-full px-4 py-2 mb-4">

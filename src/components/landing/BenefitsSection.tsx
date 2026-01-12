@@ -67,7 +67,7 @@ const accentColors = [
 
 export function BenefitsSection() {
   return (
-    <section id="benefits" className="py-20 bg-[#FFF9F2]">
+    <section id="benefits" className="py-8 bg-[#FFF9F2]">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <span className="inline-block bg-[#b8d1ba] text-[#232323] rounded-full px-4 py-2 mb-4">
