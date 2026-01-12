@@ -12,12 +12,48 @@ interface Testimonial {
 }
 
 const testimonials: Testimonial[] = [
-  { id: 1, name: "Rohit Sharma", city: "Delhi", rating: 5, text: "Got my job within 3 months... Two other astrologers had given me the wrong stone before. Humara Pandit did exact birth chart analysis and recommended Blue Sapphire." },
-  { id: 2, name: "Priya Verma", city: "Mumbai", rating: 5, text: "Was waiting for marriage for 5 years. Got the perfect match within 4 months of wearing Yellow Sapphire. Very grateful!" },
-  { id: 3, name: "Amit Gupta", city: "Bangalore", rating: 5, text: "My business was having continuous losses. The Emerald stone changed my life. Now profits have doubled." },
-  { id: 4, name: "Neha Joshi", city: "Jaipur", rating: 5, text: "Had many health issues with no clear reason. After the Pearl stone recommendation, everything started getting better. The astrologer was very knowledgeable." },
-  { id: 5, name: "Vikram Singh", city: "Pune", rating: 5, text: "Earlier I bought a stone online, it didn't work at all. Got a certified stone from here and got promoted within 2 months!" },
-  { id: 6, name: "Sunita Devi", city: "Lucknow", rating: 5, text: "There was too much negativity at home, constant fights. After wearing Gomed stone, peace has returned. Temple-charged stone has a different effect." }
+  { 
+    id: 1, 
+    name: "Rohit Sharma", 
+    city: "Delhi", 
+    rating: 5, 
+    text: "Bhai 3 months mein job lag gayi finally! Pehle 2 astrologers ne galat stone chipka diya tha. Humara Pandit ki calculation ekdum accurate nikli. Blue Sapphire suit kar gaya boss. " 
+  },
+  { 
+    id: 2, 
+    name: "Priya Verma", 
+    city: "Mumbai", 
+    rating: 5, 
+    text: "5 saal se wait kar rahi thi marriage ke liye . Yellow Sapphire pehne ke baad 4 mahine mein hi rishta pakka ho gaya!  Thank you so much, really grateful." 
+  },
+  { 
+    id: 3, 
+    name: "Amit Gupta", 
+    city: "Bangalore", 
+    rating: 5, 
+    text: "Yaar business mein continuous loss ho raha tha. Emerald (Panna) ne game change kar diya. Ab profits double ho gaye hain. Highly recommended! 📈💰" 
+  },
+  { 
+    id: 4, 
+    name: "Neha Joshi", 
+    city: "Jaipur", 
+    rating: 5, 
+    text: "Health issues samajh hi nahi aa rahe the pehle. Jab se Pearl (Moti) pehna hai, kafi better feel ho raha hai. The astrologer knows his stuff. " 
+  },
+  { 
+    id: 5, 
+    name: "Vikram Singh", 
+    city: "Pune", 
+    rating: 5, 
+    text: "Pehle online patthar mangwaya tha, koi asar nahi hua. Yahan se certified stone liya aur 2 mahine mein promotion mil gaya! Quality matters bhai." 
+  },
+  { 
+    id: 6, 
+    name: "Sunita Devi", 
+    city: "Lucknow", 
+    rating: 5, 
+    text: "Ghar mein bahut negativity aur kalesh rehta tha. Gomed pehne ke baad ab kaafi shanti hai. 🙏 Inke temple-charged stones mein alag hi power hai." 
+  }
 ];
 
 export function TestimonialsSection() {
@@ -62,7 +98,7 @@ export function TestimonialsSection() {
           <span className="inline-block bg-[#FEEFDC] text-[#BCA182] rounded-full px-4 py-2 mb-4">
             <span className="font-mono text-xs uppercase tracking-wide">Real Stories</span>
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#232323]">Real Experiences from Real People</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#232323]">Real Experiences from <br /> Real People</h2>
           <p className="text-[#353535] mt-4 max-w-xl mx-auto">
             Over 10,000 people have transformed their lives with Humara Pandit
           </p>
@@ -101,7 +137,7 @@ export function TestimonialsSection() {
           onTouchMove={onTouchMove}
           onTouchEnd={onTouchEnd}
         >
-          <div className="bg-[#FFF9F2] rounded-xl p-6 border border-[#E9E1E1] min-h-[300px] flex flex-col justify-between">
+          <div className="bg-[#FFF9F2] rounded-xl p-6 border border-[#E9E1E1] min-h-75 flex flex-col justify-between">
             <div>
               <Quote className="w-8 h-8 text-[#E9E1E1] mb-4" />
               <div className="flex gap-1 mb-4">

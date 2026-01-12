@@ -79,12 +79,7 @@ export function Header() {
           </nav>
 
           <div className="hidden md:block">
-            <button
-              onClick={() => scrollToSection('booking-form')}
-              className="btn-primary"
-            >
-              Book Now @ ₹251
-            </button>
+            
           </div>
 
           <button

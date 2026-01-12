@@ -17,7 +17,7 @@ const solutions = [
 
 export function PainSolutionSection() {
   return (
-    <section className="py-20 bg-[#FFF9F2]">
+    <section className="py-8 bg-[#FFF9F2]">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-12">
           <span className="inline-flex items-center gap-2 bg-[#FEEFDC] text-[#BCA182] rounded-full px-4 py-2 mb-4">

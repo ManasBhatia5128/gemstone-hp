@@ -24,10 +24,10 @@ export default function Home() {
         <HeroSection />
         <TrustBar />
         <CelebImagesSection />
+        <TestimonialsSection />
         <PainSolutionSection />
         <HowItWorksSection />
-        <BenefitsSection />
-        <TestimonialsSection />
+        <BenefitsSection /> 
         <BonusesSection />
         <UrgencySection />
         <BookingForm />
